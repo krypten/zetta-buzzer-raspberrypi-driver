@@ -1,8 +1,8 @@
 var Device = require('zetta-device');
 var util = require('util');
 var gpio = require('rpi-gpio');
-var Buzzer = module.exports = function(pin) {
 
+var Buzzer = module.exports = function(pin) {
   Device.call(this);
   this.pin = pin || 17;
 };
@@ -81,7 +81,7 @@ Buzzer.prototype._pattern = function(freq, onDuration, offDuration, state, cb) {
   var self = this;
   this.turnOff(function(){
     if (onDuration === Infinity || offDuration === 0) {
-      self._write(0.5, freq);
+      self._write(0.5);
     } else {
       self._timer = setInterval(self._buzz.bind(self, onDuration, freq), onDuration + offDuration);
     }
