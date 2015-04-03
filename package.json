@@ -1,0 +1,33 @@
+{
+  "name": "zetta-buzzer-raspberrypi-driver",
+  "version": "0.1.0",
+  "description": "Piezo buzzer raspberrypi driver for zetta",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chaitanya Agrawal <chaitiagrawal@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krypten/zetta-buzzer-raspberrypi-driver.git"
+  },
+  "dependencies": {
+    "rpi-gpio": "^0.5.1",
+    "zetta": "^0.24.0",
+    "zetta-auto-scout": "^0.5.0",
+    "zetta-device": "^0.7.0"
+  },
+  "bugs": {
+    "url": "https://github.com/krypten/zetta-buzzer-raspberrypi-driver/issues"
+  },
+  "homepage": "https://github.com/krypten/zetta-buzzer-raspberrypi-driver",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "zetta",
+    "buzzer",
+    "raspberrypi"
+  ]
+}
